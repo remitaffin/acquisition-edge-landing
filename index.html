@@ -3,242 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acquisition Edge | Off-Market Acquisition Intelligence</title>
-  <meta name="description" content="Exclusive acquisition intelligence with cross-source signals, exit readiness scoring, and health scoring. See off-market deals before anyone else.">
+  <title>Acquisition Edge | Confidential Acquisition Intelligence</title>
+  <meta name="description" content="Quiet, finance-grade intelligence for exclusive acquisitions. Live signals, dual scoring, and muted dashboards built for brokers, deal teams, and acquisition leads.">
   <link rel="canonical" href="https://acquisitionedge.ai/">
-  <meta property="og:title" content="Acquisition Edge | Off-Market Acquisition Intelligence">
-  <meta property="og:description" content="Exclusive acquisition intelligence with cross-source signals, exit readiness scoring, and health scoring.">
+  <meta property="og:title" content="Acquisition Edge | Confidential Acquisition Intelligence">
+  <meta property="og:description" content="Premium acquisition intelligence with live signals, exit readiness scoring, and exclusive coverage.">
   <meta property="og:image" content="/og-image.svg">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#020617">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": "Acquisition Edge",
-    "description": "Exclusive acquisition intelligence combining exit readiness and business health scoring.",
     "url": "https://acquisitionedge.ai/",
-    "image": "https://acquisitionedge.ai/og-image.svg",
-    "serviceType": "Business Intelligence Service"
+    "logo": "https://acquisitionedge.ai/og-image.svg",
+    "description": "Exclusive acquisition intelligence combining exit readiness and business health scoring with live signal fusion.",
+    "sameAs": [],
+    "areaServed": "US"
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-slate-950 text-slate-50">
-  <header class="border-b border-slate-800/60 bg-slate-950/90 sticky top-0 backdrop-blur z-40">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-2">
-        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-400 to-emerald-400 grid place-items-center font-bold text-slate-900">AE</div>
-        <span class="text-lg font-semibold tracking-tight">Acquisition Edge</span>
-      </a>
-      <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="how-it-works.html" class="hover:text-sky-200">How It Works</a>
-        <a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a>
-        <a href="coverage.html" class="hover:text-sky-200">Coverage</a>
-        <a href="sample-report.html" class="hover:text-sky-200">Sample Report</a>
-        <a href="about.html" class="hover:text-sky-200">About</a>
-      </nav>
-      <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
-      <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
-      <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
-      <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
-      <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
-      <a href="about.html" class="block hover:text-sky-200">About</a>
-      <a href="contact.html" class="block font-semibold text-slate-900 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Free Report</a>
-    </div>
-  </header>
-
-  <main class="max-w-6xl mx-auto px-4">
-    <section class="pt-16 pb-10 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="text-sm uppercase tracking-[0.3em] text-sky-300/70 mb-4">Exclusive acquisition intelligence</p>
-        <h1 class="text-4xl md:text-5xl font-semibold leading-tight mb-4">Find Off Market Deals Before Anyone Else</h1>
-        <p class="text-lg text-slate-300 mb-6">Exclusive acquisition intelligence built from live data across licenses, registries, reviews, filings, liens, and dozens of public signals.</p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="contact.html" class="px-5 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold text-center hover:bg-sky-400">Get a Free Industry Report</a>
-          <a href="signals-and-scoring.html" class="px-5 py-3 rounded-xl border border-slate-700 text-slate-100 text-center hover:border-slate-500">See Sample Signals</a>
-        </div>
-        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-slate-300 text-sm">
-          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">Exit readiness + health scoring</div>
-          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">One client per state per industry</div>
-          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">Weekly top deals report</div>
-          <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800">Daily high-priority alerts</div>
+  <div class="min-h-screen">
+    <header class="border-b border-slate-800/70 bg-slate-950/90 sticky top-0 backdrop-blur z-50">
+      <div class="ae-shell mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-sky-400 via-cyan-300 to-indigo-500 grid place-items-center font-bold text-slate-950 tracking-tight">AE</div>
+          <div>
+            <p class="text-lg font-semibold leading-tight">Acquisition Edge</p>
+            <p class="text-xs text-slate-400">Confidential intelligence</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center space-x-7 text-sm">
+          <a href="how-it-works.html" class="hover:text-sky-200 transition">How It Works</a>
+          <a href="signals-and-scoring.html" class="hover:text-sky-200 transition">Signals</a>
+          <a href="coverage.html" class="hover:text-sky-200 transition">Coverage</a>
+          <a href="sample-report.html" class="hover:text-sky-200 transition">Sample Report</a>
+          <a href="about.html" class="hover:text-sky-200 transition">About</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+          <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request Report</a>
+          <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
         </div>
       </div>
-      <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-slate-800/80 rounded-2xl p-6 shadow-xl">
-        <div class="flex items-center justify-between mb-4 text-sm text-slate-300">
-          <span>Live signal fusion</span>
-          <span class="text-sky-300">Real time</span>
-        </div>
-        <div class="space-y-3">
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-slate-200 mb-1"><span>Exit Readiness</span><span class="font-semibold text-sky-300">87</span></div>
-            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 bg-gradient-to-r from-emerald-400 via-sky-400 to-indigo-400 w-[87%]"></div></div>
-            <p class="text-xs text-slate-400 mt-2">Owner disengagement + licensing friction + complaint spikes</p>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
+        <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
+        <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
+        <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
+        <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
+        <a href="about.html" class="block hover:text-sky-200">About</a>
+        <a href="contact.html" class="block font-semibold text-slate-950 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Report</a>
+      </div>
+    </header>
+
+    <main class="ae-shell mx-auto px-4">
+      <section class="pt-16 pb-10 grid lg:grid-cols-2 gap-10 items-center fade-in">
+        <div class="space-y-6">
+          <p class="text-xs uppercase section-label text-sky-300/70">Confidential acquisition intelligence</p>
+          <h1 class="text-4xl md:text-5xl font-semibold leading-tight">Find off-market targets before they file or list.</h1>
+          <p class="text-lg text-slate-300">Quiet, premium intel built for deal teams. Dual scoring blends exit readiness with operating health, fed by live signals across filings, registries, reviews, liens, hiring, and compliance.</p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="contact.html" class="px-5 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold text-center hover:bg-sky-400 transition">Get a free industry readout</a>
+            <a href="how-it-works.html" class="px-5 py-3 rounded-xl border border-slate-700 text-slate-100 text-center hover:border-slate-500 transition">See the system</a>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-slate-200 mb-1"><span>Business Health</span><span class="font-semibold text-emerald-300">73</span></div>
-            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 bg-gradient-to-r from-emerald-300 to-sky-400 w-[73%]"></div></div>
-            <p class="text-xs text-slate-400 mt-2">Review velocity + hiring signals + multi-location expansions</p>
-          </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-slate-200 mb-1"><span>Coverage</span><span class="font-semibold text-amber-300">Exclusive</span></div>
-            <p class="text-xs text-slate-400">One client per state per industry. No oversold lists.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-slate-300">
+            <div class="ae-card rounded-xl p-3">Exclusive state + sector coverage</div>
+            <div class="ae-card rounded-xl p-3">Dual-score: Exit + Health</div>
+            <div class="ae-card rounded-xl p-3">Weekly ranked reports</div>
+            <div class="ae-card rounded-xl p-3">Daily critical alerts</div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="py-8 border-t border-slate-800">
-      <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-4">Trusted signals</p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3 text-slate-300 text-sm">
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">Google</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">BBB</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">State Registries</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">Licensing Boards</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">SBA Data</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">UCC Filings</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">Tax Liens</div>
-        <div class="p-3 rounded-lg bg-slate-900/70 border border-slate-800 text-center">LinkedIn &amp; Indeed</div>
-      </div>
-    </section>
-
-    <section class="py-12 grid md:grid-cols-3 gap-6">
-      <div class="md:col-span-3 flex items-center justify-between mb-4">
-        <h2 class="text-2xl font-semibold">What Acquisition Edge Does</h2>
-        <span class="text-sm text-slate-400">Quiet quant + finance bent</span>
-      </div>
-      <div class="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
-        <h3 class="font-semibold text-lg mb-2">Find likely sellers early</h3>
-        <p class="text-slate-300 text-sm">Detect owner disengagement, licensing friction, and complaint spikes before the market notices.</p>
-      </div>
-      <div class="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
-        <h3 class="font-semibold text-lg mb-2">Spot healthy profitable targets</h3>
-        <p class="text-slate-300 text-sm">Surface growing brands through review velocity, hiring signals, and multi-location expansion.</p>
-      </div>
-      <div class="p-5 rounded-xl bg-slate-900/70 border border-slate-800">
-        <h3 class="font-semibold text-lg mb-2">Deliver exclusive insights</h3>
-        <p class="text-slate-300 text-sm">One client per state per industry so your deal flow never gets diluted.</p>
-      </div>
-    </section>
-
-    <section class="py-12 border-t border-slate-800">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-semibold">How It Works</h2>
-        <a href="how-it-works.html" class="text-sm text-sky-300 hover:text-sky-200">See details →</a>
-      </div>
-      <div class="grid md:grid-cols-5 gap-4 text-sm">
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
-          <p class="font-semibold mb-1">Data ingestion</p>
-          <p class="text-slate-300">Licenses, filings, reviews, employment, liens.</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
-          <p class="font-semibold mb-1">Signal extraction</p>
-          <p class="text-slate-300">Ownership, sentiment, hiring, compliance shifts.</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
-          <p class="font-semibold mb-1">Scoring engine</p>
-          <p class="text-slate-300">Exit readiness + business health fused.</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
-          <p class="font-semibold mb-1">Weekly top deals report</p>
-          <p class="text-slate-300">Structured PDF + CSV outputs.</p>
-        </div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
-          <p class="font-semibold mb-1">Daily alerts</p>
-          <p class="text-slate-300">High-priority events delivered fast.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-12 grid md:grid-cols-2 gap-6">
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800">
-        <h2 class="text-2xl font-semibold mb-3">Key Differentiators</h2>
-        <ul class="space-y-2 text-slate-300 text-sm">
-          <li>Exclusive per region, no oversold data</li>
-          <li>Multi-source verification, never single-signal scraping</li>
-          <li>Refresh cycles daily to weekly</li>
-          <li>Signals capture both deterioration and improvement</li>
-          <li>Sector agnostic with live verticals</li>
-        </ul>
-      </div>
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800">
-        <h2 class="text-2xl font-semibold mb-3">Sample Output Preview</h2>
-        <div class="space-y-3">
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-sm text-slate-200 mb-1"><span>Company A</span><span class="font-semibold text-sky-300">Exit 87 · Health 73</span></div>
-            <p class="text-xs text-slate-400">Owner disengagement + licensing issues + review plateau</p>
+        <div class="ae-panel rounded-2xl p-6 glow-accent space-y-4">
+          <div class="flex items-center justify-between text-sm text-slate-300">
+            <span class="badge-dot">Live signal fusion</span>
+            <span class="text-sky-300">Realtime</span>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-sm text-slate-200 mb-1"><span>Company B</span><span class="font-semibold text-sky-300">Exit 74 · Health 81</span></div>
-            <p class="text-xs text-slate-400">Hiring velocity + new locations + fresh BBB profile</p>
+          <div class="space-y-3">
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-200 mb-1"><span>Exit readiness</span><span class="font-semibold text-sky-300" data-count="87">0</span></div>
+              <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 bg-gradient-to-r from-sky-400 via-cyan-300 to-emerald-400 w-[87%]"></div></div>
+              <p class="text-xs text-slate-400 mt-2">Owner disengagement · licensing friction · complaint spikes</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-200 mb-1"><span>Business health</span><span class="font-semibold text-emerald-300" data-count="73">0</span></div>
+              <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-2 bg-gradient-to-r from-emerald-300 to-sky-400 w-[73%]"></div></div>
+              <p class="text-xs text-slate-400 mt-2">Review velocity · hiring surges · multi-location expansions</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between text-slate-200 mb-1"><span>Coverage lock</span><span class="font-semibold text-amber-300">One client / state / sector</span></div>
+              <p class="text-xs text-slate-400">Exclusive access. No oversold lists.</p>
+            </div>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <div class="flex items-center justify-between text-sm text-slate-200 mb-1"><span>Company C</span><span class="font-semibold text-sky-300">Exit 92 · Health 64</span></div>
-            <p class="text-xs text-slate-400">Owner name changes + complaint spikes + lien activity</p>
+          <div class="pt-2 border-t border-slate-800">
+            <p class="text-xs uppercase text-slate-400 mb-2">Signal momentum</p>
+            <svg class="sparkline" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 48C22 42 32 32 46 34C62 36 72 26 88 20C106 12 126 18 140 30C154 42 170 30 196 18" stroke="#38bdf8" stroke-width="2.5"/>
+              <path d="M4 54C28 44 52 46 74 40C102 32 126 38 156 28C172 22 190 20 196 22" stroke="#22d3ee" stroke-width="1.5" opacity="0.6"/>
+            </svg>
           </div>
         </div>
-        <a href="sample-report.html" class="inline-block mt-4 text-sm text-sky-300 hover:text-sky-200">See full sample report →</a>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-12 border-t border-slate-800">
-      <h2 class="text-2xl font-semibold mb-3">Who Uses This</h2>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-slate-300">
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">Business brokers</div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">Investment banking directors</div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">VP of acquisitions</div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">Independent sponsors</div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">Search fund operators</div>
-        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">Corporate development teams</div>
-      </div>
-    </section>
+      <section class="py-10 border-t border-slate-800 fade-in">
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <p class="text-xs uppercase section-label text-slate-400">Signal fabric</p>
+            <h2 class="text-3xl font-semibold">Live signals we monitor</h2>
+          </div>
+          <a href="signals-and-scoring.html" class="text-sm text-sky-300 hover:text-sky-200">See all signals →</a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-sm text-slate-200">
+          <div class="ae-card rounded-xl p-3 text-center">Licensing boards</div>
+          <div class="ae-card rounded-xl p-3 text-center">State registries</div>
+          <div class="ae-card rounded-xl p-3 text-center">UCC filings</div>
+          <div class="ae-card rounded-xl p-3 text-center">Tax liens</div>
+          <div class="ae-card rounded-xl p-3 text-center">Review velocity</div>
+          <div class="ae-card rounded-xl p-3 text-center">Employment signals</div>
+          <div class="ae-card rounded-xl p-3 text-center">Ownership changes</div>
+          <div class="ae-card rounded-xl p-3 text-center">Complaint spikes</div>
+          <div class="ae-card rounded-xl p-3 text-center">BBB + trust files</div>
+          <div class="ae-card rounded-xl p-3 text-center">Hiring momentum</div>
+          <div class="ae-card rounded-xl p-3 text-center">Multi-location moves</div>
+          <div class="ae-card rounded-xl p-3 text-center">Domain + registry drift</div>
+        </div>
+      </section>
 
-    <section class="py-12 text-center bg-gradient-to-r from-sky-900/40 via-slate-900 to-emerald-900/30 rounded-3xl border border-slate-800 mb-14">
-      <h2 class="text-3xl font-semibold mb-4">Tell us your industry and get the first report free.</h2>
-      <p class="text-slate-300 mb-6">Exclusive coverage, live signals, and dual-score rankings delivered weekly.</p>
-      <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-    </section>
-  </main>
+      <section class="py-12 grid lg:grid-cols-[1.1fr,0.9fr] gap-6 fade-in">
+        <div class="ae-panel rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-2xl font-semibold">Operating cadence</h3>
+            <span class="text-xs uppercase text-slate-400">Quiet quant</span>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-3 text-sm text-slate-200">
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">Weekly ranked report • PDF + CSV</div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">Daily critical alerts • Email + webhook</div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">One client per state per sector</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+            <p class="text-sm text-slate-300 mb-2">Signal governance</p>
+            <ul class="text-xs text-slate-400 space-y-2">
+              <li>Cross-source verification removes single-source noise.</li>
+              <li>Dual scoring balances exit probability with operator quality.</li>
+              <li>Refresh cadence daily to weekly depending on source sensitivity.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ae-card rounded-2xl p-6 space-y-5">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-semibold">Sample output slice</h3>
+            <a href="sample-report.html" class="text-sm text-sky-300 hover:text-sky-200">Download sample →</a>
+          </div>
+          <div class="space-y-3 text-sm text-slate-200">
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Target 482 · Midwest HVAC</span><span class="text-sky-300 font-semibold">Exit 89 · Health 68</span></div>
+              <p class="text-xs text-slate-400">Owner name change, licensure delay, lien satisfied last 30d, reviews stable.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Target 193 · Specialty clinics</span><span class="text-sky-300 font-semibold">Exit 74 · Health 84</span></div>
+              <p class="text-xs text-slate-400">Hiring velocity up 22%, new locations, BBB profile refreshed, sentiment rising.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Target 311 · Commercial services</span><span class="text-sky-300 font-semibold">Exit 92 · Health 62</span></div>
+              <p class="text-xs text-slate-400">Owner disengagement + complaint spike + tax lien filed.</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400">All outputs delivered with entity matching, contact routing, and outreach-ready formatting.</p>
+        </div>
+      </section>
 
-  <footer class="border-t border-slate-800/80 bg-slate-950/90">
-    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
-        <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+      <section class="py-10 border-t border-slate-800 fade-in">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-semibold">Built for professionals who track outcomes</h3>
+          <span class="text-sm text-slate-400">Brokers · deal teams · corporate development</span>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-slate-300">
+          <div class="ae-card rounded-xl p-4">Business brokers</div>
+          <div class="ae-card rounded-xl p-4">Investment banking directors</div>
+          <div class="ae-card rounded-xl p-4">VP / Director of acquisitions</div>
+          <div class="ae-card rounded-xl p-4">Independent sponsors</div>
+          <div class="ae-card rounded-xl p-4">Search fund operators</div>
+          <div class="ae-card rounded-xl p-4">Corporate development teams</div>
+        </div>
+      </section>
+
+      <section class="my-14 p-8 rounded-3xl ae-panel fade-in text-center">
+        <p class="text-xs uppercase section-label text-slate-400 mb-3">Exclusive coverage</p>
+        <h3 class="text-3xl font-semibold mb-3">Tell us your industry and geography. Secure the edge.</h3>
+        <p class="text-slate-300 mb-6">We lock a single client per state per sector. Quiet, disciplined, and built for finance teams that move first.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request free report</a>
+          <a href="coverage.html" class="px-6 py-3 rounded-xl border border-slate-700 text-slate-50 hover:border-slate-500 transition">Check coverage</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 bg-slate-950/90">
+      <div class="ae-shell mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
+          <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Explore</p>
+          <ul class="space-y-2">
+            <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
+            <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
+            <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Company</p>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+            <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
+            <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
+          <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
+        </div>
       </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Explore</p>
-        <ul class="space-y-2">
-          <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
-          <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
-          <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Company</p>
-        <ul class="space-y-2">
-          <li><a href="about.html" class="hover:text-sky-200">About</a></li>
-          <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
-          <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
-        <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
     toggle?.addEventListener('click', () => {
       menu.classList.toggle('hidden');
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+    document.querySelectorAll('[data-count]').forEach((el) => {
+      const target = Number(el.getAttribute('data-count')) || 0;
+      let current = 0;
+      const step = Math.max(1, Math.floor(target / 24));
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(interval);
+        }
+        el.textContent = current;
+      }, 30);
     });
   </script>
 </body>

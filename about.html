@@ -3,121 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Acquisition Edge</title>
-  <meta name="description" content="Quiet quant approach to acquisition intelligence with exclusivity and AI agent architecture.">
+  <title>About Acquisition Edge | Quiet Quant Intelligence</title>
+  <meta name="description" content="Quiet quant approach to acquisition intelligence. Exclusive coverage, disciplined scoring, and data rigor for brokers and deal teams.">
   <link rel="canonical" href="https://acquisitionedge.ai/about">
   <meta property="og:title" content="About Acquisition Edge">
   <meta property="og:description" content="Exclusive acquisition intelligence built by data systems and M&A practitioners.">
   <meta property="og:image" content="/og-image.svg">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#020617">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": "Acquisition Edge",
     "url": "https://acquisitionedge.ai/about",
     "description": "Acquisition intelligence with exclusivity, dual scoring, and AI agent architecture.",
-    "serviceType": "Business Intelligence Service"
+    "logo": "https://acquisitionedge.ai/og-image.svg"
   }
   </script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-slate-950 text-slate-50">
-  <header class="border-b border-slate-800/60 bg-slate-950/90 sticky top-0 backdrop-blur z-40">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-2">
-        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-400 to-emerald-400 grid place-items-center font-bold text-slate-900">AE</div>
-        <span class="text-lg font-semibold tracking-tight">Acquisition Edge</span>
-      </a>
-      <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="how-it-works.html" class="hover:text-sky-200">How It Works</a>
-        <a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a>
-        <a href="coverage.html" class="hover:text-sky-200">Coverage</a>
-        <a href="sample-report.html" class="hover:text-sky-200">Sample Report</a>
-        <a href="about.html" class="hover:text-sky-200">About</a>
-      </nav>
-      <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
-      <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
-      <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
-      <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
-      <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
-      <a href="about.html" class="block hover:text-sky-200">About</a>
-      <a href="contact.html" class="block font-semibold text-slate-900 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Free Report</a>
-    </div>
-  </header>
+  <div class="min-h-screen">
+    <header class="border-b border-slate-800/70 bg-slate-950/90 sticky top-0 backdrop-blur z-50">
+      <div class="ae-shell mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-sky-400 via-cyan-300 to-indigo-500 grid place-items-center font-bold text-slate-950 tracking-tight">AE</div>
+          <div>
+            <p class="text-lg font-semibold leading-tight">Acquisition Edge</p>
+            <p class="text-xs text-slate-400">Confidential intelligence</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center space-x-7 text-sm">
+          <a href="how-it-works.html" class="hover:text-sky-200 transition">How It Works</a>
+          <a href="signals-and-scoring.html" class="hover:text-sky-200 transition">Signals</a>
+          <a href="coverage.html" class="hover:text-sky-200 transition">Coverage</a>
+          <a href="sample-report.html" class="hover:text-sky-200 transition">Sample Report</a>
+          <a href="about.html" class="hover:text-sky-200 transition">About</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+          <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request Report</a>
+          <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
+        <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
+        <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
+        <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
+        <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
+        <a href="about.html" class="block hover:text-sky-200">About</a>
+        <a href="contact.html" class="block font-semibold text-slate-950 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Report</a>
+      </div>
+    </header>
 
-  <main class="max-w-5xl mx-auto px-4">
-    <section class="pt-14 pb-8">
-      <p class="text-sm uppercase tracking-[0.3em] text-sky-300/70 mb-2">About</p>
-      <h1 class="text-3xl md:text-4xl font-semibold mb-4">Quiet quant acquisition intelligence</h1>
-      <p class="text-lg text-slate-300">Acquisition Edge was built for teams that want signal clarity, exclusivity, and disciplined scoring—not hype.</p>
-    </section>
+    <main class="ae-shell mx-auto px-4">
+      <section class="pt-14 pb-8 fade-in">
+        <p class="text-sm uppercase section-label text-sky-300/70 mb-3">About</p>
+        <h1 class="text-4xl font-semibold mb-4">Quiet quant acquisition intelligence.</h1>
+        <p class="text-lg text-slate-300">Acquisition Edge is built for teams that want signal clarity, exclusivity, and disciplined scoring—not hype. Every feature is tuned for confidentiality and finance-grade rigor.</p>
+      </section>
 
-    <section class="py-8 grid md:grid-cols-3 gap-6">
-      <div class="md:col-span-2 p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-3">
-        <h2 class="text-2xl font-semibold">Our approach</h2>
-        <p class="text-slate-300 text-sm">We combine data systems, AI agents, and M&A instincts to surface off-market targets before anyone else. Every state and industry is exclusive to a single client to prevent dilution.</p>
-        <p class="text-slate-300 text-sm">Dual scoring—Exit Readiness and Business Health—keeps your pipeline focused on owners who are ready and businesses worth owning.</p>
-        <p class="text-slate-300 text-sm">Weekly reports and daily alerts ensure you never miss a move. Quiet, confident, data-driven.</p>
-      </div>
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 text-center">
-        <div class="h-28 w-28 mx-auto rounded-full bg-gradient-to-br from-sky-500 via-indigo-500 to-emerald-400 flex items-center justify-center text-3xl font-bold text-slate-900 mb-3">AE</div>
-        <p class="font-semibold text-lg mb-1">Founder</p>
-        <p class="text-slate-300 text-sm">Data systems builder with experience across AI agents, corporate development, and private market intel.</p>
-      </div>
-    </section>
+      <section class="py-8 grid md:grid-cols-3 gap-6 fade-in">
+        <div class="md:col-span-2 ae-panel rounded-2xl p-6 space-y-3">
+          <h2 class="text-2xl font-semibold">Our approach</h2>
+          <p class="text-slate-300 text-sm">We combine data systems, agent-based monitoring, and M&A instincts to surface off-market targets before anyone else. Each state and industry is exclusive to a single client to prevent dilution.</p>
+          <p class="text-slate-300 text-sm">Dual scoring—Exit Readiness and Business Health—keeps your pipeline focused on owners ready to move and businesses worth owning.</p>
+          <p class="text-slate-300 text-sm">Weekly reports and daily alerts ensure you never miss a move. Quiet, confident, and data-driven.</p>
+        </div>
+        <div class="ae-card rounded-2xl p-6 text-center space-y-3">
+          <div class="h-28 w-28 mx-auto rounded-full bg-gradient-to-br from-sky-500 via-indigo-500 to-emerald-400 flex items-center justify-center text-3xl font-bold text-slate-900">AE</div>
+          <p class="font-semibold text-lg">Founder-led</p>
+          <p class="text-slate-300 text-sm">Data systems builder with experience across AI agents, corporate development, and private market intel.</p>
+        </div>
+      </section>
 
-    <section class="py-8 border-t border-slate-800 grid md:grid-cols-2 gap-6">
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800">
-        <h2 class="text-2xl font-semibold mb-2">Mission</h2>
-        <p class="text-slate-300 text-sm">Deliver the fastest, most exclusive acquisition intelligence so brokers and acquisition teams always know which company to call next.</p>
-      </div>
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800">
-        <h2 class="text-2xl font-semibold mb-2">Why exclusivity matters</h2>
-        <p class="text-slate-300 text-sm">One client per state per industry keeps your edge intact. Data advantage only works when it is yours alone.</p>
-      </div>
-    </section>
+      <section class="py-8 border-t border-slate-800 grid md:grid-cols-2 gap-6 fade-in">
+        <div class="ae-card rounded-2xl p-6">
+          <h2 class="text-2xl font-semibold mb-2">Mission</h2>
+          <p class="text-slate-300 text-sm">Deliver the fastest, most exclusive acquisition intelligence so brokers and acquisition teams always know which company to call next.</p>
+        </div>
+        <div class="ae-card rounded-2xl p-6">
+          <h2 class="text-2xl font-semibold mb-2">Why exclusivity matters</h2>
+          <p class="text-slate-300 text-sm">One client per state per industry keeps your edge intact. Data advantage only works when it is yours alone.</p>
+        </div>
+      </section>
 
-    <section class="py-12 text-center bg-gradient-to-r from-sky-900/40 via-slate-900 to-emerald-900/30 rounded-3xl border border-slate-800 mb-14">
-      <h2 class="text-3xl font-semibold mb-4">Let’s build your exclusive coverage.</h2>
-      <p class="text-slate-300 mb-6">Tell us your industry and geography. Get the first report free.</p>
-      <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-    </section>
-  </main>
+      <section class="py-10 fade-in">
+        <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-300">
+          <div class="ae-card rounded-xl p-4">Institutional tone: premium, restrained, analytical.</div>
+          <div class="ae-card rounded-xl p-4">Design language: dark slate, muted steel blues, subtle electric accents.</div>
+          <div class="ae-card rounded-xl p-4">Operating cadence: signals first, hype-free, built for decision makers.</div>
+        </div>
+      </section>
 
-  <footer class="border-t border-slate-800/80 bg-slate-950/90">
-    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
-        <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+      <section class="py-12 text-center ae-panel rounded-3xl fade-in mb-14">
+        <h2 class="text-3xl font-semibold mb-3">Let’s build your exclusive coverage.</h2>
+        <p class="text-slate-300 mb-6">Tell us your industry and geography. Get the first report free.</p>
+        <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request Free Report</a>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 bg-slate-950/90">
+      <div class="ae-shell mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
+          <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Explore</p>
+          <ul class="space-y-2">
+            <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
+            <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
+            <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Company</p>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+            <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
+            <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
+          <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
+        </div>
       </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Explore</p>
-        <ul class="space-y-2">
-          <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
-          <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
-          <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Company</p>
-        <ul class="space-y-2">
-          <li><a href="about.html" class="hover:text-sky-200">About</a></li>
-          <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
-          <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
-        <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
     const toggle = document.getElementById('menu-toggle');
@@ -125,6 +143,11 @@
     toggle?.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('show'));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
