@@ -4,158 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample Report | Acquisition Edge</title>
-  <meta name="description" content="Access a gated sample report showing anonymized acquisition signals and scoring.">
+  <meta name="description" content="Preview a sample Acquisition Edge report with exit readiness, business health, and supporting signal notes.">
   <link rel="canonical" href="https://acquisitionedge.ai/sample-report">
   <meta property="og:title" content="Sample Report | Acquisition Edge">
-  <meta property="og:description" content="See anonymized cards, scoring, and structure before requesting your custom report.">
+  <meta property="og:description" content="Preview the ranked deals and signal notes delivered each week.">
   <meta property="og:image" content="/og-image.svg">
   <meta property="og:type" content="website">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Acquisition Edge",
-    "url": "https://acquisitionedge.ai/sample-report",
-    "description": "Gated sample acquisition report with exit readiness and health scoring.",
-    "serviceType": "Business Intelligence Service"
-  }
+  <meta property="og:site_name" content="Acquisition Edge">
+  <meta property="og:locale" content="en_US">
+  <meta name="geo.region" content="US">
+  <meta name="geo.country" content="US">
+  <meta name="geo.placename" content="United States">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#020617">
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+          },
+        },
+      },
+    };
   </script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.10/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.10"></script>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-slate-950 text-slate-50">
-  <header class="border-b border-slate-800/60 bg-slate-950/90 sticky top-0 backdrop-blur z-40">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center space-x-2">
-        <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-400 to-emerald-400 grid place-items-center font-bold text-slate-900">AE</div>
-        <span class="text-lg font-semibold tracking-tight">Acquisition Edge</span>
-      </a>
-      <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="how-it-works.html" class="hover:text-sky-200">How It Works</a>
-        <a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a>
-        <a href="coverage.html" class="hover:text-sky-200">Coverage</a>
-        <a href="sample-report.html" class="hover:text-sky-200">Sample Report</a>
-        <a href="about.html" class="hover:text-sky-200">About</a>
-      </nav>
-      <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
-      <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
-      <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
-      <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
-      <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
-      <a href="about.html" class="block hover:text-sky-200">About</a>
-      <a href="contact.html" class="block font-semibold text-slate-900 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Free Report</a>
-    </div>
-  </header>
-
-  <main class="max-w-5xl mx-auto px-4">
-    <section class="pt-14 pb-8 text-center">
-      <p class="text-sm uppercase tracking-[0.3em] text-sky-300/70 mb-2">Sample report</p>
-      <h1 class="text-3xl md:text-4xl font-semibold mb-4">Request access to the gated report</h1>
-      <p class="text-lg text-slate-300">Submit the form to unlock anonymized cards, score explanations, and the structure of the weekly PDF and CSV.</p>
-    </section>
-
-    <section class="py-8 grid md:grid-cols-2 gap-6">
-      <form action="https://formspree.io/f/mzbnwkjk" method="POST" class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4" data-netlify="true" name="sample-report">
-        <div>
-          <label class="block text-sm text-slate-200 mb-1" for="name">Name</label>
-          <input class="w-full rounded-lg bg-slate-950 border border-slate-800 px-3 py-2 text-slate-50" type="text" id="name" name="name" required>
-        </div>
-        <div>
-          <label class="block text-sm text-slate-200 mb-1" for="email">Email</label>
-          <input class="w-full rounded-lg bg-slate-950 border border-slate-800 px-3 py-2 text-slate-50" type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label class="block text-sm text-slate-200 mb-1" for="role">Role</label>
-          <select class="w-full rounded-lg bg-slate-950 border border-slate-800 px-3 py-2 text-slate-50" id="role" name="role" required>
-            <option value="Broker">Broker</option>
-            <option value="Investment Banking">Investment Banking</option>
-            <option value="VP of Acquisitions">VP of Acquisitions</option>
-            <option value="Independent Sponsor">Independent Sponsor</option>
-            <option value="Search Fund">Search Fund</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-sm text-slate-200 mb-1" for="industry">Industry of interest</label>
-          <input class="w-full rounded-lg bg-slate-950 border border-slate-800 px-3 py-2 text-slate-50" type="text" id="industry" name="industry" placeholder="HVAC, lawn care, auto repair" required>
-        </div>
-        <div>
-          <label class="block text-sm text-slate-200 mb-1" for="geography">Geography</label>
-          <input class="w-full rounded-lg bg-slate-950 border border-slate-800 px-3 py-2 text-slate-50" type="text" id="geography" name="geography" placeholder="State or metro" required>
-        </div>
-        <button type="submit" class="w-full px-4 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Unlock Sample Report</button>
-      </form>
-      <div class="p-6 rounded-2xl bg-slate-900/70 border border-slate-800 space-y-4">
-        <h2 class="text-2xl font-semibold">What you see inside</h2>
-        <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
-          <li>Three anonymized company cards with Exit and Health scores</li>
-          <li>Why each company surfaced and which signals triggered</li>
-          <li>How weekly PDF and CSV outputs are structured</li>
-          <li>Guidance on outreach prioritization and exclusivity</li>
-        </ul>
-        <div class="grid gap-3 text-sm text-slate-300">
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <p class="font-semibold text-slate-50">Company X</p>
-            <p class="text-xs text-slate-400">Exit 89 · Health 71 — ownership change + lien clearance + hiring freeze</p>
+  <div class="min-h-screen">
+    <header class="border-b border-slate-800/70 bg-slate-950/90 sticky top-0 backdrop-blur z-50">
+      <div class="ae-shell mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-sky-500/80 via-blue-500/70 to-indigo-500/70 grid place-items-center font-bold text-slate-950 tracking-tight border border-slate-700/70">AE</div>
+          <div>
+            <p class="text-lg font-semibold leading-tight">Acquisition Edge</p>
+            <p class="text-xs text-slate-400">Confidential intelligence</p>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <p class="font-semibold text-slate-50">Company Y</p>
-            <p class="text-xs text-slate-400">Exit 78 · Health 84 — seasonal surge + new licensing + fresh reviews</p>
+        </a>
+        <nav class="hidden md:flex items-center space-x-7 text-sm">
+          <a href="how-it-works.html" class="hover:text-sky-200 transition">How It Works</a>
+          <a href="signals-and-scoring.html" class="hover:text-sky-200 transition">Signals</a>
+          <a href="coverage.html" class="hover:text-sky-200 transition">Coverage</a>
+          <a href="sample-report.html" class="hover:text-sky-200 transition">Sample Report</a>
+          <a href="about.html" class="hover:text-sky-200 transition">About</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+          <a href="contact.html" class="hidden md:inline-flex px-4 py-2 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request Report</a>
+          <button id="menu-toggle" class="md:hidden text-slate-200" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 border-t border-slate-800 bg-slate-950/95">
+        <a href="how-it-works.html" class="block hover:text-sky-200">How It Works</a>
+        <a href="signals-and-scoring.html" class="block hover:text-sky-200">Signals</a>
+        <a href="coverage.html" class="block hover:text-sky-200">Coverage</a>
+        <a href="sample-report.html" class="block hover:text-sky-200">Sample Report</a>
+        <a href="about.html" class="block hover:text-sky-200">About</a>
+        <a href="contact.html" class="block font-semibold text-slate-950 bg-sky-500 rounded-lg px-3 py-2 text-center">Request Report</a>
+      </div>
+    </header>
+
+    <main class="ae-shell mx-auto px-4">
+      <section class="pt-14 pb-8 fade-in">
+        <p class="text-sm uppercase section-label text-sky-300/70 mb-3">Sample output</p>
+        <h1 class="text-4xl font-semibold mb-4">What you receive each week.</h1>
+        <p class="text-lg text-slate-300">A concise report with ranked targets, dual scores, and the supporting signals that justify outreach priority.</p>
+      </section>
+
+      <section class="py-8 grid lg:grid-cols-[1.05fr,0.95fr] gap-6 fade-in">
+        <div class="ae-panel rounded-xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-2xl font-semibold">Preview</h2>
+            <span class="text-sm text-slate-400">PDF + CSV delivery</span>
           </div>
-          <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800">
-            <p class="font-semibold text-slate-50">Company Z</p>
-            <p class="text-xs text-slate-400">Exit 93 · Health 62 — complaint spikes + ownership disengagement</p>
+          <div class="space-y-3 text-sm text-slate-200">
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Midwest HVAC</span><span class="text-sky-300 font-semibold">Exit 89 · Health 68</span></div>
+              <p class="text-xs text-slate-400">Owner name change, licensure delay, lien satisfied last 30d, reviews stable.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Specialty clinics</span><span class="text-sky-300 font-semibold">Exit 74 · Health 84</span></div>
+              <p class="text-xs text-slate-400">Hiring velocity up 22%, new locations, BBB profile refreshed, sentiment rising.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+              <div class="flex items-center justify-between mb-1"><span>Commercial services</span><span class="text-sky-300 font-semibold">Exit 92 · Health 62</span></div>
+              <p class="text-xs text-slate-400">Owner disengagement + complaint spike + tax lien filed.</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400">Each line includes entity matching, contacts, and outreach-ready fields.</p>
+          <a href="contact.html" class="inline-flex px-4 py-2 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request the latest version</a>
+        </div>
+        <div class="ae-card rounded-xl p-6 space-y-4">
+          <h2 class="text-xl font-semibold">Included in every report</h2>
+          <ul class="text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Exit Readiness + Business Health scores</li>
+            <li>Signal notes with timestamps and source provenance</li>
+            <li>Priority tags for immediate outreach</li>
+            <li>CSV for CRM import + PDF for leadership</li>
+            <li>Coverage map for your state and sector</li>
+          </ul>
+          <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+            <p class="text-xs uppercase section-label text-slate-400 mb-1">Download</p>
+            <a class="text-sky-300 font-semibold hover:text-sky-200 text-sm" href="https://tally.so/r/3NpaQz" target="_blank" rel="noopener">Open sample report in Tally →</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-10 text-center bg-gradient-to-r from-sky-900/40 via-slate-900 to-emerald-900/30 rounded-3xl border border-slate-800 mb-14">
-      <h2 class="text-3xl font-semibold mb-4">Ready for your custom version?</h2>
-      <p class="text-slate-300 mb-6">One client per state per industry. Weekly reports and daily alerts included.</p>
-      <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-    </section>
-  </main>
+      <section class="py-10 border-t border-slate-800 fade-in">
+        <h3 class="text-2xl font-semibold mb-3">Delivery cadence</h3>
+        <div class="grid md:grid-cols-3 gap-4 text-sm text-slate-300">
+          <div class="ae-card rounded-xl p-4">Weekly ranked report every Monday.</div>
+          <div class="ae-card rounded-xl p-4">Daily alerts for critical changes.</div>
+          <div class="ae-card rounded-xl p-4">Onboarding call to tailor sectors and geographies.</div>
+        </div>
+      </section>
 
-  <footer class="border-t border-slate-800/80 bg-slate-950/90">
-    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
-        <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+      <section class="py-12 text-center ae-panel rounded-xl fade-in mb-14">
+        <h2 class="text-3xl font-semibold mb-3">Ready for a confidential walkthrough?</h2>
+        <p class="text-slate-300 mb-6">Send your industry and geography. We’ll share the most recent ranked report.</p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="contact.html" class="px-6 py-3 rounded-xl bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400 transition">Request free report</a>
+          <a href="coverage.html" class="px-6 py-3 rounded-xl border border-slate-700 text-slate-50 hover:border-slate-500 transition">Check availability</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-800/80 bg-slate-950/90">
+      <div class="ae-shell mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm text-slate-300">
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Acquisition Edge</p>
+          <p class="text-slate-400">Exclusive acquisition intelligence built on real-time public signals.</p>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Explore</p>
+          <ul class="space-y-2">
+            <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
+            <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
+            <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Company</p>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+            <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
+            <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
+          <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
+        </div>
       </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Explore</p>
-        <ul class="space-y-2">
-          <li><a href="how-it-works.html" class="hover:text-sky-200">How It Works</a></li>
-          <li><a href="signals-and-scoring.html" class="hover:text-sky-200">Signals</a></li>
-          <li><a href="coverage.html" class="hover:text-sky-200">Coverage</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Company</p>
-        <ul class="space-y-2">
-          <li><a href="about.html" class="hover:text-sky-200">About</a></li>
-          <li><a href="sample-report.html" class="hover:text-sky-200">Sample Report</a></li>
-          <li><a href="legal.html" class="hover:text-sky-200">Legal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-50 mb-2">Get in touch</p>
-        <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-sky-500 text-slate-950 font-semibold hover:bg-sky-400">Request Free Report</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
-    toggle?.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
+    toggle?.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add('show'));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
   </script>
 </body>
 </html>
