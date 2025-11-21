@@ -31,9 +31,11 @@ body {
 }
 
 .ae-card {
-  background: var(--ae-card);
-  border: 1px solid var(--ae-border);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(160deg, rgba(10, 12, 26, 0.9), rgba(15, 23, 42, 0.78));
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(8px);
+  cursor: default;
 }
 
 .ae-panel {
